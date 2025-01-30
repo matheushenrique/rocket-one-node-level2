@@ -1,0 +1,67 @@
+# Functionalities
+- [x] The user can create a new transaction
+- [x] The user can get a summary of your account
+- [x] The user can list all transactions that already happened
+- [x] The user can visualize a specific transaction
+
+- [x] A transaction can be credit that would add to the total or debit that would subtract
+- [] It should be possible to identify the user among the requests
+- [] A user can only see a transaction that he created
+
+# Commands
+
+## Create tsconfig file
+```
+npx tsx --init
+```
+
+## Convert file into javascript
+```
+npx tsc src/server.ts
+```
+
+## Install library to convert and run typescript files
+Use only for dev env
+```
+npm i tsx -D
+```
+
+## Open user settings
+Add this config to save with proper lint
+```
+"editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+```
+
+# Database
+
+Using SQLite
+Using Knex query-builder
+Knex was not build with typescript
+## Useful knex commands 
+```
+npx knex migrate:make create-documents
+npm run knex -- migrate:make create-documents
+npm run knex -- migrate:latest
+npm run knex -- migrate:rollback
+```
+
+# Libraries
+
+## vitest
+
+Uses esbuild to speed up the process
+Fast setup, and readability of typescript
+
+## supertest
+
+Perform http requests
+
+# Build
+
+## tsc
+
+## tsup
+
+Uses esbuild to speed up the process
