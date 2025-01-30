@@ -65,3 +65,7 @@ Perform http requests
 ## tsup
 
 Uses esbuild to speed up the process
+
+# Deploy
+
+It was used Render to deploy
